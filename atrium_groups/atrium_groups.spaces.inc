@@ -24,7 +24,7 @@ function atrium_groups_spaces_presets() {
         'spaces_dashboard' => '1',
       ),
       'spaces_dashboard_custom' => array(
-        'custom-1' => 'Dashboard',
+        'custom-1' => t('Dashboard'),
       ),
       'spaces_setting_home' => 'dashboard',
       'spaces_og_selective' => 3,
