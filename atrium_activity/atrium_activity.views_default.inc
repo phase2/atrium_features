@@ -295,6 +295,10 @@ function atrium_activity_views_default_views() {
         'button' => 'Use default',
       ),
       'relationship' => 'none',
+	  'crayon' => array(
+	  	'enabled' => 'enabled',
+		'acronym' => 'acronym',
+	  ),
     ),
     'feature' => array(
       'label' => '',
