@@ -80,7 +80,7 @@ function _atrium_form_spaces_features_form_alter(&$form, $form_state) {
         ATRIUM_MEMBERS_ALL => t('Users can view all members'),
         ATRIUM_MEMBERS_GROUP => t('Users can only view members that belong to their groups')
       ),
-      '#default_value' => variable_get('atrium_members', ATRIUM_MEMBERS_ALL),
+      '#default_value' => variable_get('atrium_members', ATRIUM_MEMBERS_GROUP),
     );
     $form['atrium']['atrium_notifications'] = array(
       '#title' => t('Notifications'),
