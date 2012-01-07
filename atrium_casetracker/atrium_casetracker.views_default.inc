@@ -11,10 +11,9 @@ function atrium_casetracker_views_default_views() {
   $view->name = 'casetracker_cases';
   $view->description = 'Atrium > Case Tracker';
   $view->tag = 'atrium';
-  $view->view_php = '';
   $view->base_table = 'node';
-  $view->is_cacheable = FALSE;
-  $view->api_version = 2;
+  $view->core = 0;
+  $view->api_version = '2';
   $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
   $handler = $view->new_display('default', 'Defaults', 'default');
   $handler->override_option('relationships', array(
@@ -948,11 +947,11 @@ function atrium_casetracker_views_default_views() {
       'validate_argument_node_access' => 1,
       'validate_argument_nid_type' => 'nid',
       'validate_argument_vocabulary' => array(
-        '5' => 0,
-        '1' => 0,
-        '2' => 0,
-        '6' => 0,
-        '4' => 0,
+        5 => 0,
+        1 => 0,
+        2 => 0,
+        6 => 0,
+        4 => 0,
       ),
       'validate_argument_type' => 'tid',
       'user_argument_type' => '',
@@ -1168,7 +1167,7 @@ function atrium_casetracker_views_default_views() {
       'validate_argument_node_access' => 1,
       'validate_argument_nid_type' => 'nid',
       'validate_argument_vocabulary' => array(
-        '1' => 0,
+        1 => 0,
       ),
       'validate_argument_type' => 'tid',
       'user_argument_type' => '',
@@ -1178,9 +1177,9 @@ function atrium_casetracker_views_default_views() {
       'validate_argument_php' => '',
       'validate_user_argument_type' => 'uid',
       'validate_user_roles' => array(
-        '2' => 0,
-        '3' => 0,
-        '4' => 0,
+        2 => 0,
+        3 => 0,
+        4 => 0,
       ),
       'validate_argument_transform' => 0,
       'validate_user_restrict_roles' => 0,
@@ -1813,9 +1812,9 @@ function atrium_casetracker_views_default_views() {
       'field' => 'assign_to',
       'validate_user_argument_type' => 'uid',
       'validate_user_roles' => array(
-        '2' => 0,
-        '3' => 0,
-        '4' => 0,
+        2 => 0,
+        3 => 0,
+        4 => 0,
       ),
       'override' => array(
         'button' => 'Use default',
@@ -1840,7 +1839,7 @@ function atrium_casetracker_views_default_views() {
       'validate_argument_node_access' => 0,
       'validate_argument_nid_type' => 'nid',
       'validate_argument_vocabulary' => array(
-        '1' => 0,
+        1 => 0,
       ),
       'validate_argument_type' => 'tid',
       'validate_argument_transform' => 0,
@@ -1963,10 +1962,9 @@ function atrium_casetracker_views_default_views() {
   $view->name = 'casetracker_override_assignee_options';
   $view->description = 'Atrium case tracker >  User options query builder';
   $view->tag = 'casetracker';
-  $view->view_php = '';
   $view->base_table = 'users';
-  $view->is_cacheable = FALSE;
-  $view->api_version = 2;
+  $view->core = 0;
+  $view->api_version = '2';
   $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
   $handler = $view->new_display('default', 'Defaults', 'default');
   $handler->override_option('fields', array(
@@ -2071,10 +2069,9 @@ function atrium_casetracker_views_default_views() {
   $view->name = 'casetracker_override_project_options';
   $view->description = 'Atrium case tracker > Project options query builder';
   $view->tag = 'casetracker';
-  $view->view_php = '';
   $view->base_table = 'node';
-  $view->is_cacheable = FALSE;
-  $view->api_version = 2;
+  $view->core = 0;
+  $view->api_version = '2';
   $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
   $handler = $view->new_display('default', 'Defaults', 'default');
   $handler->override_option('fields', array(
@@ -2161,10 +2158,9 @@ function atrium_casetracker_views_default_views() {
   $view->name = 'casetracker_projects';
   $view->description = 'Atrium > Case Tracker projects';
   $view->tag = 'atrium';
-  $view->view_php = '';
   $view->base_table = 'node';
-  $view->is_cacheable = FALSE;
-  $view->api_version = 2;
+  $view->core = 0;
+  $view->api_version = '2';
   $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
   $handler = $view->new_display('default', 'Defaults', 'default');
   $handler->override_option('fields', array(
