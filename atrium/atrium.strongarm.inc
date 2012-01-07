@@ -301,17 +301,6 @@ function atrium_strongarm() {
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'space_menu_items';
-  $strongarm->value = array(
-    'dashboard' => -20,
-    'og' => -19,
-    'members' => -18,
-  );
-  $export['space_menu_items'] = $strongarm;
-
-  $strongarm = new stdClass;
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
   $strongarm->name = 'spaces_dashboard_blocks';
   $strongarm->value = array(
     'atrium-welcome_admin' => 1,
@@ -368,6 +357,17 @@ function atrium_strongarm() {
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'space_menu_items';
+  $strongarm->value = array(
+    'dashboard' => -20,
+    'og' => -19,
+    'members' => -18,
+  );
+  $export['space_menu_items'] = $strongarm;
+
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'theme_settings';
   $strongarm->value = array(
     'toggle_logo' => 1,
@@ -410,6 +410,13 @@ function atrium_strongarm() {
   $strongarm->name = 'upload_usersize_default';
   $strongarm->value = 200;
   $export['upload_usersize_default'] = $strongarm;
+
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'user_pictures';
+  $strongarm->value = TRUE;
+  $export['user_pictures'] = $strongarm;
 
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -473,13 +480,6 @@ function atrium_strongarm() {
   $strongarm->name = 'user_picture_path';
   $strongarm->value = 'pictures';
   $export['user_picture_path'] = $strongarm;
-
-  $strongarm = new stdClass;
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'user_pictures';
-  $strongarm->value = TRUE;
-  $export['user_pictures'] = $strongarm;
 
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
