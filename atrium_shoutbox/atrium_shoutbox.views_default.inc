@@ -11,10 +11,9 @@ function atrium_shoutbox_views_default_views() {
   $view->name = 'shoutbox_shoutboxes';
   $view->description = 'Spaces Shoutbox: helper view to look up shoutbox in active space';
   $view->tag = 'atrium';
-  $view->view_php = '';
   $view->base_table = 'node';
-  $view->is_cacheable = FALSE;
-  $view->api_version = 2;
+  $view->core = 0;
+  $view->api_version = '2';
   $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
   $handler = $view->new_display('default', 'Defaults', 'default');
   $handler->override_option('fields', array(
@@ -113,10 +112,9 @@ function atrium_shoutbox_views_default_views() {
   $view->name = 'shoutbox_shouts';
   $view->description = 'View a shouts for a given shoutbox';
   $view->tag = 'atrium';
-  $view->view_php = '';
   $view->base_table = 'comments';
-  $view->is_cacheable = FALSE;
-  $view->api_version = 2;
+  $view->core = 0;
+  $view->api_version = '2';
   $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
   $handler = $view->new_display('default', 'Defaults', 'default');
   $handler->override_option('relationships', array(
@@ -643,10 +641,9 @@ function atrium_shoutbox_views_default_views() {
   $view->name = 'shoutbox_users';
   $view->description = 'Block of users that can filter the messaging shoutbox';
   $view->tag = 'atrium';
-  $view->view_php = '';
   $view->base_table = 'users';
-  $view->is_cacheable = FALSE;
-  $view->api_version = 2;
+  $view->core = 0;
+  $view->api_version = '2';
   $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
   $handler = $view->new_display('default', 'Defaults', 'default');
   $handler->override_option('fields', array(
