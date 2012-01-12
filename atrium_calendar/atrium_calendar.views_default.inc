@@ -409,6 +409,19 @@ function atrium_calendar_views_default_views() {
   $view->api_version = '2';
   $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
   $handler = $view->new_display('default', 'Defaults', 'default');
+  $handler->override_option('relationships', array(
+    'term_node_tid' => array(
+      'label' => 'Event Type terms',
+      'required' => 0,
+      'vids' => array(
+        1 => '1',
+      ),
+      'id' => 'term_node_tid',
+      'table' => 'node',
+      'field' => 'term_node_tid',
+      'relationship' => 'none',
+    ),
+  ));
   $handler->override_option('fields', array(
     'title' => array(
       'label' => '',
@@ -513,7 +526,7 @@ function atrium_calendar_views_default_views() {
       'id' => 'tid',
       'table' => 'term_data',
       'field' => 'tid',
-      'relationship' => 'none',
+      'relationship' => 'term_node_tid',
     ),
   ));
   $handler->override_option('arguments', array(

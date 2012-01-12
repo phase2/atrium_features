@@ -11,10 +11,9 @@ function atrium_blog_views_default_views() {
   $view->name = 'blog_comments';
   $view->description = 'Atrium > Blog comments';
   $view->tag = 'atrium';
-  $view->view_php = '';
   $view->base_table = 'comments';
-  $view->is_cacheable = FALSE;
-  $view->api_version = 2;
+  $view->core = 0;
+  $view->api_version = '2';
   $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
   $handler = $view->new_display('default', 'Defaults', 'default');
   $handler->override_option('relationships', array(
@@ -255,10 +254,9 @@ function atrium_blog_views_default_views() {
   $view->name = 'blog_listing';
   $view->description = 'Atrium > blog';
   $view->tag = 'atrium';
-  $view->view_php = '';
   $view->base_table = 'node';
-  $view->is_cacheable = FALSE;
-  $view->api_version = 2;
+  $view->core = 0;
+  $view->api_version = '2';
   $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
   $handler = $view->new_display('default', 'Defaults', 'default');
   $handler->override_option('fields', array(
@@ -337,7 +335,7 @@ function atrium_blog_views_default_views() {
       'validate_argument_node_access' => 0,
       'validate_argument_nid_type' => 'nid',
       'validate_argument_vocabulary' => array(
-        '1' => 0,
+        1 => 0,
       ),
       'validate_argument_type' => 'tid',
       'validate_argument_is_member' => 0,
@@ -375,7 +373,7 @@ function atrium_blog_views_default_views() {
       'validate_argument_node_access' => 0,
       'validate_argument_nid_type' => 'nid',
       'validate_argument_vocabulary' => array(
-        '1' => 0,
+        1 => 0,
       ),
       'validate_argument_type' => 'tid',
       'validate_argument_php' => '',
@@ -511,7 +509,7 @@ function atrium_blog_views_default_views() {
       'validate_argument_node_access' => 0,
       'validate_argument_nid_type' => 'nid',
       'validate_argument_vocabulary' => array(
-        '1' => 0,
+        1 => 0,
       ),
       'validate_argument_type' => 'tid',
       'validate_argument_is_member' => 0,
@@ -547,10 +545,10 @@ function atrium_blog_views_default_views() {
       'validate_argument_node_access' => 0,
       'validate_argument_nid_type' => 'nid',
       'validate_argument_vocabulary' => array(
-        '12' => 0,
-        '13' => 0,
-        '8' => 0,
-        '1' => 0,
+        12 => 0,
+        13 => 0,
+        8 => 0,
+        1 => 0,
       ),
       'validate_argument_type' => 'tid',
       'validate_argument_php' => '',
