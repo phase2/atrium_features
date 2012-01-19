@@ -18,32 +18,3 @@ function atrium_reader_ctools_plugin_api() {
     return array("version" => 1);
   }
 }
-
-/**
- * Implementation of hook_node_info().
- */
-function atrium_reader_node_info() {
-  $items = array(
-    'feed_reader' => array(
-      'name' => t('Reader feed'),
-      'module' => 'features',
-      'description' => '',
-      'has_title' => '1',
-      'title_label' => t('Title'),
-      'has_body' => '0',
-      'body_label' => '',
-      'min_word_count' => '0',
-      'help' => '',
-    ),
-  );
-  return $items;
-}
-
-/**
- * Implementation of hook_views_api().
- */
-function atrium_reader_views_api() {
-  return array(
-    'api' => '2',
-  );
-}
